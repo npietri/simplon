@@ -1,0 +1,317 @@
+/* 
+##################################################
+##################################################
+				Style général
+##################################################
+##################################################
+*/		
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Ubuntu, sans-serif;
+}
+section:nth-child(even){
+	background-color: #2B2B2B;
+	color:white;
+}
+section:nth-child(odd){
+	background-color: #E3E2D5;
+	color:black;
+}
+section{
+	height: 900px;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+}
+h2
+{
+  padding-top: 25px;
+}
+h3{
+	text-align: center;
+	align-self: center;
+	color: #e80041;
+	font-size: 1.4em;
+}
+h4{
+	color: #e80041;
+	font-size: 1.4em;
+}
+h5{
+	font-size: 1.4em;
+
+}
+p, li{
+	font-size: 1.2em;
+}
+
+/* 
+##################################################
+##################################################
+				Losange inter-section
+##################################################
+##################################################
+*/		
+.losange{
+	width: 50px;
+	height: 50px;
+	margin: -26px auto 0 auto;
+	transform: rotate(45deg);
+	border: 2px solid #e80041;
+	line-height: 50px;
+	white-space: nowrap;
+	text-align: center;
+	background-color: white;
+}	
+.ariane{
+	color: black;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+}
+.chevron{
+	transform: rotate(45deg);	
+	font-weight: bold;
+}
+/* 
+##################################################
+##################################################
+				CSS partie header et section-top
+##################################################
+##################################################
+*/		
+
+header
+{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+}
+#menu{
+	display: flex;
+  width: 100%;
+  padding-right: 100px;
+  height: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+nav
+{
+	display: flex;
+	align-items: center;
+  width: 100%;
+  font-size: 1.8em;
+  background-color: rgb(174,164,164);
+}
+#sectiontop
+{
+  padding-top: 55px;
+}
+#menu a
+{
+  color: rgb(248,25,88);
+  /*border-right: 1px solid rgb(220,14,72);*/
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* A utiliser pour le fil d'ariane */
+.active a{
+	background-color: rgba(242,242,242,0.8);
+	border-radius:10px;
+}
+#sectiontop img
+{
+  padding-left: 50px;
+  padding-top: 150px;
+}
+.presa
+{
+  width: 75%;
+  text-indent: justify;
+  padding-top: 50px;
+}
+.question
+{  
+  padding-top: 100px;
+}
+.separateur{
+	color: rgb(248,25,88);
+}
+.logo{
+	padding: 5px;
+	background-color:#aea4a4;
+}
+/*
+###################################################
+###################################################
+                Section trombinoscope
+###################################################
+###################################################
+*/
+
+.trombinoscope {
+    background-color: #EEEDED;    
+}
+.trombi {
+    border-left: 10px solid #EF004A;
+    padding-left: 2%;
+    
+    margin-top: 5%;
+}
+.trombi img {
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+/* 
+##################################################
+##################################################
+				Section Candidature
+##################################################
+##################################################
+*/		
+.candidature_s{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.flex-candi{
+	padding-bottom: 150px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;	
+}
+.flex-candi li{
+	margin-left:30px;
+}
+.candidatures_img{	
+	justify-content: center;
+	align-self: center;	
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* 
+##################################################
+##################################################
+				Section entreprise
+##################################################
+##################################################
+*/		
+.btn-entreprise{
+	padding-top: 6%;
+	display: flex;
+	justify-content: space-around;
+}
+.bouton-entreprise{  
+    height: 90px;
+    width: 280px;
+    background-color: #E80041;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+/* 
+##################################################
+##################################################
+				Section partenaires
+##################################################
+##################################################
+*/		
+.img-part{
+	padding-top: 15%;
+}
+
+/* 
+##################################################
+##################################################
+				Contact
+##################################################
+##################################################
+*/		
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: #323232;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+}
+footer a:last-child{
+	border: none;
+
+}
+footer a{
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid white;
+	padding: 0 10px;
+}
+footer p{
+	border-right: 1px solid white;
+	padding: 0 10px;
+}
+.sectionformulaire{
+	padding-top: 15%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.formulaire{
+	display: flex;
+	flex-direction: column;
+}
+.formulaire input{
+	margin-bottom: 10px;
+}
+.formulaire textarea{
+	margin-bottom: 10px;
+	min-height: 100px;
+}
+#name, #mail{
+	width: 50%
+}
+
+#copy{
+	align-self: flex-start;
+}
+#submit{
+	width: 62px;
+	height: 22px;
+	color: white;
+	background-image:linear-gradient(#ff7a02, #ffb513);
+	border: none;
+}
+.contact{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.4em;
+}
+.pinkstar{
+	color: #e80041;
+}
+
+.logosocial{
+
+height: 40px;
+width: 40px;
+
+}
+.noBorder{
+	border: none;
+}
+.t-contact{
+	font-weight: bold;
+}
